@@ -1,0 +1,132 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: "philosopher";
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    /* background-color: #57c4e513; */
+    background-image: linear-gradient(to right, rgba(255,0,0,0), #1CCE7E);
+}
+
+#box{
+    /* border: 2px solid black; */
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: initial;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #1cce7e;
+}
+
+.board{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+    height: 40px;
+    /* background-color: yellow; */
+}
+
+.board h3{
+    color: white;
+}
+
+.scoreBoard{
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#main h1{
+    font-size: 50px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#bubbles{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100% - 70px);
+}
+
+.bubble{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin: 10px 10px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), #1CCE7E);
+}
+
+#gameover{
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 80%;
+    height: 80%;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), #1CCE7E);
+}
+
+#gameover h1{
+    margin-top: 35%;
+    font-size: 120px;
+}
+
+#gameover h2{
+    font-size: 50px;
+    margin-top: 11%;
+}
+
+#gameover h3{
+    margin-top: 8%;
+    font-size: 25px;
+}
+
+button{
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 10px 40px;
+    border-radius: 20px;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), #1CCE7E);
+
+}
